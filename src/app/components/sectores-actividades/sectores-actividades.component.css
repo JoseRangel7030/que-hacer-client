@@ -1,0 +1,109 @@
+/* Estilo del h2 espectacular */
+.spectacular-h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold;
+    text-align: center; /* Centrado */
+    background: linear-gradient(45deg, #ff6b6b, #f9ca24, #4cd137); /* Gradiente de fondo */
+    -webkit-background-clip: text; /* Clip del fondo */
+    color: transparent; /* Texto transparente */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    margin: 20px 0; /* Margen superior e inferior */
+    padding: 10px; /* Relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    position: relative; /* Posicionamiento relativo */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Transición para transformaciones */
+}
+
+/* Estilo hover para el h2 */
+.spectacular-h2:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+/* Animación de degradado continuo */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Aplicar animación al h2 */
+.spectacular-h2 {
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+
+/* Contenedor del select */
+.select-container {
+    position: relative;
+    /* display: inline-block; */
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo del select */
+.select-container select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Icono personalizado de la flecha */
+.select-container::after {
+    content: '▼';
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Cambio de color en hover */
+.select-container select:hover {
+    border-color: #3e8e41;
+}
+
+/* Cambio de color y sombra en focus */
+.select-container select:focus {
+    border-color: #2e7031;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Estilo para opciones */
+.select-container select option {
+    padding: 10px;
+    background: #fff;
+}
+
+/* Personalización del estilo para dispositivos móviles */
+@media (max-width: 768px) {
+    .select-container {
+        width: 100%;
+    }
+
+    .select-container select {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,85 @@
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y estilizada */
+    font-size: 4em; /* Tamaño grande */
+    font-weight: bold; /* Texto grueso */
+    color: #ff6f61; /* Color vibrante */
+    background: linear-gradient(45deg, #ff6f61, #ff9a8b); /* Degradado en diagonal */
+    background-clip: text; /* Aplicar el fondo al texto */
+    -webkit-background-clip: text; /* Compatibilidad con WebKit */
+    -webkit-text-fill-color: transparent; /* Hacer transparente el relleno del texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Para utilizar pseudo-elementos */
+}
+
+h1::before {
+    content: ''; /* Pseudo-elemento vacío */
+    position: absolute; /* Posición absoluta */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1)); /* Degradado sobre el texto */
+    z-index: -1; /* Detrás del texto */
+    transform: rotate(-2deg); /* Ligero giro */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra del pseudo-elemento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.spectacular {
+    font-family: 'Arial', sans-serif; /* Fuente elegante */
+    font-size: 20px; /* Tamaño de fuente adecuado */
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: center; /* Alineación centrada */
+    background: linear-gradient(90deg, #ff6f61, #ffb74d, #64b5f6); /* Gradiente de colores */
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent; /* Elimina el color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+    margin: 20px auto; /* Margen centrado */
+    padding: 15px 20px; /* Relleno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del cuadro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de animación */
+  }
+  
+.spectacular:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Sombra más intensa al hacer hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+  
+  

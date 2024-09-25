@@ -1,10 +1,20 @@
-<h2>Selecciona un sector</h2>
-@for (sector of sectores; track sector) {
-    <p>{{sector}}</p>
-}
+<h2 class="spectacular-h2">Selecciona un sector</h2>
+
+<div class="select-container">
+    <select>
+        @for (sector of sectores; track sector) {
+            <option>{{sector}}</option>
+        }
+    </select>
+</div>
 
 <br/>
-<h2>Actividades</h2>
-@for (actividad of actividades; track actividad) {
-    <p>{{actividad}}</p>
-}
+<h2 class="spectacular-h2">Actividades</h2>
+
+<div class="select-container">
+    <select>
+        @for (actividad of actividades; track actividad) {
+            <option>{{actividad}}</option>
+        }
+    </select>
+</div>
